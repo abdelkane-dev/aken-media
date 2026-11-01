@@ -124,4 +124,8 @@ L'utilisateur veut une gestion **automatique chaque jour, sans attendre son acco
 - Garde-fous : jamais de suppression de posts publiés, jamais de pub payante, jamais de message privé ; aucun avis ni chiffre inventé ; ElevenLabs : garder au moins 2 000 crédits de réserve ; vidIQ : 10 crédits par jour au maximum (65 restants jusqu'au 1er déc.) ; vérifier le quota Metricool avant d'ajouter un post. Commentaire sensible (plainte, insulte, question juridique ou de prix non connu) → réponse polie qui renvoie vers le WhatsApp, et le signaler dans le journal.
 - Limites des outils : réponses aux commentaires **YouTube seulement** (vidIQ) ; pas de « j'aime », pas d'accès aux commentaires Instagram, Facebook ou TikTok ; concurrents via vidIQ (recherche de vidéos qui cartonnent) et Metricool (concurrents à ajouter dans Metricool par l'utilisateur).
 
+### Fiche Google (guide donné le 1er nov.)
+- Site officiel stable à utiliser partout : **https://aken-two.vercel.app** (domaine de production Vercel). L'adresse en `aken-ihf1sayge-…vercel.app` enregistrée dans Metricool est une adresse de prévisualisation → à remplacer.
+- Catégorie principale conseillée « Concepteur de sites Web », zone desservie Bamako, adresse masquée, téléphone/WhatsApp +223 93 78 99 16. Logo carré + couverture 1600×900 (rendu 3D A) envoyés à l'utilisateur.
+
 ## Journal des routines
