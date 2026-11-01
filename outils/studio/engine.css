@@ -1,0 +1,28 @@
+@font-face{font-family:Montserrat;font-weight:700;src:url(montserrat-latin-700-normal.woff2)}
+@font-face{font-family:Montserrat;font-weight:800;src:url(montserrat-latin-800-normal.woff2)}
+@font-face{font-family:Montserrat;font-weight:900;src:url(montserrat-latin-900-normal.woff2)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:transparent}
+body{font-family:Inter,sans-serif;color:#fff}
+#stage{position:absolute;inset:0;overflow:hidden}
+.bg{position:absolute;inset:0;background:#0A0A0A}
+.orb{position:absolute;border-radius:50%;filter:blur(120px);opacity:.55}
+.scene{position:absolute;inset:0;opacity:0}
+.grad{background:linear-gradient(90deg,#FF3D00,#FF6B00,#FFAA00);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gbg{background:linear-gradient(135deg,#FF3D00,#FF6B00 55%,#FFAA00)}
+h1,.h{font-family:Montserrat;font-weight:900;letter-spacing:-.02em;line-height:1.02}
+.center{position:absolute;left:80px;right:80px;text-align:center}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:36px;backdrop-filter:blur(8px)}
+.pill{display:inline-block;padding:14px 30px;border-radius:999px;font-weight:700;font-size:38px}
+.logo{position:absolute;top:84px;left:72px;height:74px}
+#bar{position:absolute;top:0;left:0;height:10px;width:0}
+#cap{position:absolute;left:60px;right:60px;top:1520px;text-align:center;font-family:Montserrat;font-weight:900;font-size:78px;line-height:1.08;text-transform:uppercase;letter-spacing:-.01em;text-shadow:0 6px 24px rgba(0,0,0,.85),0 0 2px #000}
+#cap .w{display:inline-block;margin:0 .14em}
+#cap .on{color:#FFAA00}
+.phone{position:absolute;width:520px;height:1060px;border-radius:72px;background:#111;border:12px solid #2a2a2a;box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 0 2px #3a3a3a;overflow:hidden}
+.phone .notch{position:absolute;top:18px;left:50%;width:150px;height:34px;margin-left:-75px;border-radius:20px;background:#000;z-index:5}
+.phone .scr{position:absolute;inset:0;padding:90px 30px 30px}
+.bub{max-width:80%;padding:20px 26px;border-radius:30px;font-size:30px;line-height:1.3;margin:14px 0}
+.bub.in{background:#262626;border-bottom-left-radius:8px}
+.bub.out{background:#0b6b4f;margin-left:auto;border-bottom-right-radius:8px}
+.tag{position:absolute;font-size:24px;color:rgba(255,255,255,.55)}

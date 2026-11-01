@@ -65,3 +65,33 @@
 - Voix retenue : **`wVCurQkwZwgv2ptFiiKd`** (identique à l'extrait envoyé par l'utilisateur). Voix d'essai 12,3 s faite (212 crédits). Avatar parlant OmniHuman lancé (11 945 crédits), à partir du rendu A recadré en vertical.
 - **Avatar parlant v1 fait** (OmniHuman 1.5, 11 945 crédits) : 12,5 s, 1088×1920, 25 i/s, avec ta voix. Lèvres synchronisées, gestes (mains ouvertes, pouces, doigt levé), clignements. Petites taches claires possibles en haut de l'image → recadrer légèrement au montage. Génération `YhZtFQipmBwRrw4hAHbR` dans le flux ElevenLabs. Total dépensé ce jour ≈ 17 030 crédits ElevenLabs.
 - Recette réutilisable pour chaque vidéo : texte → `creative_generate_speech` (voix `wVCurQkwZwgv2ptFiiKd`, eleven_v4) → OmniHuman avec le nœud image `StUWt8aXk9TdVw6XJrRX` (rendu A vertical) → montage (fond Aken, sous-titres, musique) → publication.
+
+## Programmation Metricool faite le 1er nov. 2026 (heure de Bamako)
+Règle de l'utilisateur : **une vidéo tous les 3-4 jours**, et entre deux vidéos des **posts photo** (images fixes + voix off + musique). Chaque post différent, jamais répétitif.
+Réseaux de chaque post : Facebook Reel + Instagram Reel + TikTok + YouTube Short (déclarés « contenu IA »).
+
+| Date | Heure | Type | Sujet |
+|---|---|---|---|
+| dim. 1 nov. | 18:00 | Vidéo avatar | « Salut, moi c'est Abdoul » (présentation) |
+| lun. 2 | 10:00 | Photo | Astuce : crée ta fiche Google |
+| mar. 3 | 18:00 | Photo | Un site vitrine, c'est quoi ? (75 000 FCFA) |
+| mer. 4 | 10:00 | Vidéo avatar | Tu vends encore tout sur WhatsApp ? |
+| jeu. 5 | 10:00 | Photo | 3 réflexes sécurité (audit Aken) |
+| ven. 6 | 12:00 | Photo | Une appli mobile, c'est pour qui ? |
+| sam. 7 | 10:00 | Photo | 3 réglages WhatsApp Business |
+| dim. 8 | 18:00 | Vidéo animée | 3 signes que ton business perd des clients |
+| mer. 11 | 10:00 | Vidéo animée | Combien coûte un site au Mali ? |
+| dim. 15 | 18:00 | Vidéo animée | Payer avec Wave / Orange Money |
+| mer. 18 | 10:00 | Vidéo animée | Avant/après : cahier → logiciel (données fictives) |
+| dim. 22 | 18:00 | Vidéo animée | 3 idées reçues |
+| mer. 25 | 10:00 | Vidéo animée | C'est quoi ton business ? (-10 %) |
+
+**À faire ensuite** : posts photo des 9-10, 12-14, 16-17, 19-21, 23-24, 26-30 nov. (nouveaux sujets, voix + musique). Quota Metricool gratuit (~20 posts/mois) : 13 posts déjà en novembre → vérifier la limite avant d'en ajouter.
+
+### Outils de production (dans `outils/studio/`, médias ignorés par git)
+- `engine.css/js` + `render.js` : moteur d'animation image par image (Playwright → ffmpeg). `build.py` : voix + sous-titres karaoké calés sur la voix (`align.py`) + musique baissée sous la voix + carton de fin WhatsApp. `specs.py` (vidéos), `photos.py` (posts photo, mode `photo=True` = images fixes avec léger zoom, sans sous-titres).
+- Polices Montserrat (npm `@fontsource/montserrat`) et `logo.png` (dépôt `abdelkane-dev/aken`, `assets/logo.png`) à recopier dans `outils/studio/` sur un conteneur neuf.
+- **Hébergement pour Metricool** : branche temporaire `tmp-medias` du dépôt → Metricool copie le fichier sur son serveur → branche vidée juste après (accord de l'utilisateur le 1er nov.). Le proxy ne peut pas supprimer la branche : l'utilisateur peut la supprimer sur GitHub.
+- **Musiques** : 3 morceaux générés par vidIQ (IA, libres de droits) : `amapiano`, `afrohouse`, `lofi` (60 s). vidIQ : 65 crédits restants (recharge le 1er déc.).
+- **ElevenLabs** : forfait 40 000 crédits/mois, **il en reste environ 6 600** → plus d'avatar parlant possible ce mois-ci (≈ 12 000 crédits chacun). Une voix off ≈ 250-400 crédits. L'avatar du 8 nov. a été remplacé par une vidéo animée.
+- Analyse concurrents (vidIQ, Afrique de l'Ouest francophone) : ce qui marche = face caméra + accroche forte en 3 s, prix affichés, astuces pratiques (ex. « Wave sans connexion » 609 k vues), sous-titres dynamiques, voix + musique.
