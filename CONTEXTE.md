@@ -95,3 +95,15 @@ Réseaux de chaque post : Facebook Reel + Instagram Reel + TikTok + YouTube Shor
 - **Musiques** : 3 morceaux générés par vidIQ (IA, libres de droits) : `amapiano`, `afrohouse`, `lofi` (60 s). vidIQ : 65 crédits restants (recharge le 1er déc.).
 - **ElevenLabs** : forfait 40 000 crédits/mois, **il en reste environ 6 600** → plus d'avatar parlant possible ce mois-ci (≈ 12 000 crédits chacun). Une voix off ≈ 250-400 crédits. L'avatar du 8 nov. a été remplacé par une vidéo animée.
 - Analyse concurrents (vidIQ, Afrique de l'Ouest francophone) : ce qui marche = face caméra + accroche forte en 3 s, prix affichés, astuces pratiques (ex. « Wave sans connexion » 609 k vues), sous-titres dynamiques, voix + musique.
+
+### Liberté de diffusion (règle donnée le 1er nov.)
+- Claude choisit librement la fréquence et la répartition : une seule vidéo partout, une vidéo + des images, ou vidéos seulement sur TikTok/YouTube et photos ailleurs. Varier.
+- Un même contenu peut être publié le même jour sur plusieurs réseaux (même vidéo ou même photo voix + musique).
+- **TikTok et YouTube : priorité aux vidéos**, même si ce sont les mêmes que sur les autres réseaux.
+- Éviter de republier exactement la même vidéo **sur le même réseau** (TikTok/Instagram baissent la portée des doublons).
+
+### Reste à faire côté utilisateur
+- Supprimer la branche vide `tmp-medias` sur GitHub ; supprimer les 2 voix « Abdoul » en trop dans ElevenLabs.
+- Répondre aux commentaires (ou les transmettre à Claude pour préparer les réponses) ; LinkedIn en parallèle.
+- Questions toujours ouvertes : domaine `aken.dev` ? témoignages et chiffres du site réels ? champs de la fiche Google.
+- Prochaine session Claude : bilan des statistiques de la 1re semaine (Metricool), puis posts photo du 9 au 30 nov. dans le quota restant.
