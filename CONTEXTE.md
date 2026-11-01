@@ -1,4 +1,4 @@
-# Contexte de reprise — réseaux sociaux Aken (mis à jour le 1er novembre 2026)
+# Contexte de reprise — réseaux sociaux Aken (mis à jour le 1er novembre 2026, session 2)
 
 À lire en début de session par Claude avant tout travail réseaux sociaux.
 
@@ -37,3 +37,10 @@
 6. Questions encore sans réponse : possède-t-il le domaine `aken.dev` (canonical du site, non rattaché sur Vercel) ? Les témoignages et chiffres du site (5 avis nommés, 5★/12, « +100K membres ») sont-ils réels ?
 7. Fiche Google : l'utilisateur remplira les champs plus tard.
 8. Côté skills Agensi : l'utilisateur doit envoyer les zips v1.3.1 (dépôt privé `abdelkane-dev/forgeagent-skills`). Le connecteur Agensi est maintenant disponible dans les sessions.
+
+## Session du 1er novembre 2026 (suite)
+- **Voix reçue** : enregistrement de l'utilisateur, 2 min 03, m4a AAC 44,1 kHz stéréo, propre, pauses régulières. **Ne jamais la mettre dans ce dépôt public** (dépôt privé `aken-voix` ou Google Drive seulement).
+- **Réseau** : `huggingface.co` passe, mais les fichiers de modèles sont bloqués (`cas-server.xethub.hf.co`, `cas-bridge.xethub.hf.co`, `cdn-lfs.huggingface.co`, `cdn-lfs-us-1.hf.co`) → impossible de télécharger Whisper/Chatterbox. `pixabay.com` / `cdn.pixabay.com` répondent 403.
+- **vidIQ voix off** = moteur ElevenLabs. Les voix clonées par l'utilisateur dans vidIQ apparaissent en tête de `vidiq_voiceover_list_voices` (`isCustom=true`). Aucune voix perso pour l'instant. Coût : 14 crédits / 1000 caractères. Piste la plus simple pour le clonage.
+- **Retour sur la démo mascotte** : « acceptable » mais la mascotte ne marche que dans un sens, mouvements bizarres → à corriger (marche aller-retour avec retournement, transitions entre poses plus douces, gestes variés).
+- En attente des réponses de l'utilisateur (méthode de clonage, pubs payantes ou posts normaux, détails sur la mascotte).
