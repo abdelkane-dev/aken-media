@@ -113,3 +113,15 @@ Réseaux de chaque post : Facebook Reel + Instagram Reel + TikTok + YouTube Shor
 - Rappel de la règle : **une seule vidéo tous les 3-4 jours**, publiée le même jour sur tous les réseaux ; les autres jours, une publication photo (voix + musique) sur tous les réseaux ; on peut ajouter des photos un jour de vidéo.
 - **Commentaires** : l'utilisateur autorise Claude à y répondre. YouTube via vidIQ (`vidiq_video_comments` / `vidiq_reply_to_comment`) ; Instagram, Facebook et TikTok ne sont pas accessibles par les outils. Autorisation YouTube donnée par l'utilisateur le 1er nov. : les réponses passent maintenant directement.
 - **Commentaire traité (réponse publiée le 1er nov.)** : « Intéressant mais pas de son 😢❤ » (@AïssaTouré-n7y) sur le Short du 31 oct. (`fZv2SSuq2aI`, commentId `UgyrZc64amJphpZ9x_14AaABAg`). Vérifié : cette vidéo est **réellement muette** (fichier `aken-intro-short.mp4`, -91 dB). Réponse prévue : « Merci beaucoup ❤️ Tu as raison, cette version est partie sans le son, désolé 🙏 Une nouvelle vidéo, avec la voix cette fois, arrive ce soir à 18 h sur la chaîne. Et si tu as une question sur ton projet : WhatsApp +223 93 78 99 16 » (à adapter si publiée après le 1er nov. au soir). Toutes les vidéos de novembre ont bien du son (≈ -17 dB).
+
+### Routine quotidienne automatique (demandée le 1er nov.)
+L'utilisateur veut une gestion **automatique chaque jour, sans attendre son accord** : vérifier les publications, répondre aux commentaires, analyser les statistiques et les concurrents, compléter le calendrier.
+- Une Routine se déclenche chaque jour à **19 h 47 (Bamako)** dans cette même session.
+- Musiques vidIQ (liens permanents, à retélécharger sur un conteneur neuf) :
+  - amapiano : https://ai-music-tracks.s3.us-east-1.amazonaws.com/019dfbf5-5e17-454f-9317-d8e5a2c09061/f5705de8-eb61-439d-ab2b-8ae5aa4bb8c3.wav
+  - afrohouse : https://ai-music-tracks.s3.us-east-1.amazonaws.com/019dfbf5-5e17-454f-9317-d8e5a2c09061/76272922-6e17-4ea9-9e83-798fc26517dd.wav
+  - lofi : https://ai-music-tracks.s3.us-east-1.amazonaws.com/019dfbf5-5e17-454f-9317-d8e5a2c09061/5fd99dad-fba3-4b18-9237-7f1025c1c9fd.wav
+- Garde-fous : jamais de suppression de posts publiés, jamais de pub payante, jamais de message privé ; aucun avis ni chiffre inventé ; ElevenLabs : garder au moins 2 000 crédits de réserve ; vidIQ : 10 crédits par jour au maximum (65 restants jusqu'au 1er déc.) ; vérifier le quota Metricool avant d'ajouter un post. Commentaire sensible (plainte, insulte, question juridique ou de prix non connu) → réponse polie qui renvoie vers le WhatsApp, et le signaler dans le journal.
+- Limites des outils : réponses aux commentaires **YouTube seulement** (vidIQ) ; pas de « j'aime », pas d'accès aux commentaires Instagram, Facebook ou TikTok ; concurrents via vidIQ (recherche de vidéos qui cartonnent) et Metricool (concurrents à ajouter dans Metricool par l'utilisateur).
+
+## Journal des routines
