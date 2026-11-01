@@ -105,5 +105,11 @@ Réseaux de chaque post : Facebook Reel + Instagram Reel + TikTok + YouTube Shor
 ### Reste à faire côté utilisateur
 - Supprimer la branche vide `tmp-medias` sur GitHub ; supprimer les 2 voix « Abdoul » en trop dans ElevenLabs.
 - Répondre aux commentaires (ou les transmettre à Claude pour préparer les réponses) ; LinkedIn en parallèle.
-- Questions toujours ouvertes : domaine `aken.dev` ? témoignages et chiffres du site réels ? champs de la fiche Google.
+- Réponses (1er nov.) : l'utilisateur **ne possède pas** `aken.dev` ; les avis, notes et chiffres du site sont **faux** → il va les remplacer. **Ne jamais citer ces avis/chiffres dans les posts.** La fiche Google est remplie : publier dessus aussi.
 - Prochaine session Claude : bilan des statistiques de la 1re semaine (Metricool), puis posts photo du 9 au 30 nov. dans le quota restant.
+
+### Mise à jour du 1er nov. (suite)
+- **Fiche Google ajoutée** à tous les posts programmés (`gmbData.type = photo` : la vidéo du jour va dans la galerie), + 2 actualités texte (`publication`) le mar. 3 à 12 h et le ven. 6 à 10 h. Utiliser tous les réseaux connectés à Metricool (Facebook, Instagram, TikTok, YouTube, Google).
+- Rappel de la règle : **une seule vidéo tous les 3-4 jours**, publiée le même jour sur tous les réseaux ; les autres jours, une publication photo (voix + musique) sur tous les réseaux ; on peut ajouter des photos un jour de vidéo.
+- **Commentaires** : l'utilisateur autorise Claude à y répondre. YouTube via vidIQ (`vidiq_video_comments` / `vidiq_reply_to_comment`) ; Instagram, Facebook et TikTok ne sont pas accessibles par les outils. La 1re réponse a demandé une **autorisation YouTube** (lien vidIQ donné à l'utilisateur) → réessayer après son accord.
+- **Commentaire en attente** : « Intéressant mais pas de son 😢❤ » (@AïssaTouré-n7y) sur le Short du 31 oct. (`fZv2SSuq2aI`, commentId `UgyrZc64amJphpZ9x_14AaABAg`). Vérifié : cette vidéo est **réellement muette** (fichier `aken-intro-short.mp4`, -91 dB). Réponse prévue : « Merci beaucoup ❤️ Tu as raison, cette version est partie sans le son, désolé 🙏 Une nouvelle vidéo, avec la voix cette fois, arrive ce soir à 18 h sur la chaîne. Et si tu as une question sur ton projet : WhatsApp +223 93 78 99 16 » (à adapter si publiée après le 1er nov. au soir). Toutes les vidéos de novembre ont bien du son (≈ -17 dB).
