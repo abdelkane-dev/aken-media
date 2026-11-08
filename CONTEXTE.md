@@ -128,4 +128,30 @@ L'utilisateur veut une gestion **automatique chaque jour, sans attendre son acco
 - Site officiel stable à utiliser partout : **https://aken-two.vercel.app** (domaine de production Vercel). L'adresse en `aken-ihf1sayge-…vercel.app` enregistrée dans Metricool est une adresse de prévisualisation → à remplacer.
 - Catégorie principale conseillée « Concepteur de sites Web », zone desservie Bamako, adresse masquée, téléphone/WhatsApp +223 93 78 99 16. Logo carré + couverture 1600×900 (rendu 3D A) envoyés à l'utilisateur.
 
+### Stratégie v2 (8 nov. 2026) — adaptée de la vidéo « Agent Reach » et des chiffres réels
+Méthode retenue (celle de la vidéo) : comparer **son compte vs les concurrents** (vues, sujets, accroches) puis décider quoi publier.
+- **Chiffres réels du 1er au 7 nov.** (Metricool). Les 7 posts sont partis sur Facebook, Instagram, TikTok, YouTube et Google.
+  - Facebook Reels (vues) : « Un site vitrine, c'est quoi ? » **268**, intro avatar 91, astuce fiche Google 62, appli mobile 45, sécurité 19, vendre sur WhatsApp 13, WhatsApp Business 6. **Temps moyen regardé : 1 à 3 s** (sauf 12 s pour « Tu vends encore tout sur WhatsApp ? ») → l'accroche n'arrête pas le pouce.
+  - Instagram Reels (vues) : 34 / 15 / 13 / 4 / 4 / 3 / 2 / 2 ; temps moyen 4 à 13 s ; 0 à 3 « j'aime », 3 commentaires en tout.
+  - TikTok, YouTube : **aucune donnée via Metricool** (compte TikTok perso, YouTube vide) → demander à l'utilisateur une capture de ses stats TikTok, ou 1 appel vidIQ (5 crédits).
+  - Google : 0 vue (fiche pas encore validée). YouTube : aucun nouveau commentaire.
+  - Échantillon minuscule (7 posts, < 300 vues) : tendances, pas certitudes.
+- **Ce que font les concurrents qui cartonnent** (vidIQ, 1er nov.) : une vraie personne face caméra, une question dès les 3 premières secondes, prix et réponses concrètes (« combien coûte l'envoi », 44× la médiane), astuces pratiques locales (« Wave sans connexion », 609 k vues), portraits d'entrepreneurs.
+- **Règles v2 pour tout nouveau post** :
+  1. Accroche dans la **première seconde** : question déjà à l'écran à l'image 1 (pas de fondu), voix dès 0 s, vidéo de 10 à 15 s.
+  2. Ratio **3 astuces utiles pour 1 offre**. Sujets concrets (prix, photos produit, erreurs courantes), jamais d'avis ni de chiffre inventé.
+  3. **Un seul mot-clé d'appel** : « Écris SITE sur WhatsApp » + lien `https://wa.me/22393789916?text=SITE` dans la légende (cliquable sur Facebook, YouTube, Google) → on compte les messages « SITE » pour mesurer.
+  4. Questions simples à répondre en commentaire (oui/non, 1-2-3, « écris ta phrase »), pas « tag un ami ».
+  5. Montrer du **vrai travail** : captures ou enregistrements d'écran de vrais projets d'Aken. À demander à l'utilisateur 2-3 projets réels qu'il accepte de montrer.
+  6. Moins de posts, meilleurs : quota gratuit Metricool limité ; TikTok et YouTube en priorité (vidéos), Facebook ensuite, Instagram après avoir gagné des abonnés.
+- **Rappel** : le numéro WhatsApp officiel est +223 93 78 99 16. De vieux commentaires YouTube (2025) donnaient `wa.me/22366378213` : à faire confirmer par l'utilisateur.
+
+### Limites découvertes le 8 nov. (à lire avant de promettre de l'automatique)
+- **La routine « 19 h 47 » ne s'exécute pas toute seule.** Elle envoie un rappel dans cette session ; les rappels du 1er au 7 nov. ne sont arrivés que le 7 nov. au soir, d'un coup. Rien n'a été fait automatiquement entre-temps (les posts, eux, sont partis car programmés dans Metricool).
+- Une routine créée par l'outil de cette session démarre **sans les connecteurs** (Metricool, vidIQ, ElevenLabs) : inutilisable telle quelle. Pour une vraie automatisation, l'utilisateur doit créer la routine dans l'interface Routines de claude.ai en y attachant les connecteurs.
+- **ElevenLabs a changé d'adresse de téléchargement** des voix : `elevenlabsusercontent.com`. Le réseau de la session la bloque ; l'utilisateur a refusé de l'ajouter (8 nov.). Tant que ce n'est pas autorisé, impossible de récupérer de nouvelles voix off (3 voix du 8 nov. générées mais non téléchargeables : « erreurs page », « offre en une phrase », « photos produit »).
+- **Calendrier** : rien de programmé les 9, 10, 12, 13, 14 nov. (vidéo le 8 à 18 h, puis le 11, 15, 18, 22, 25).
+- **Agent Reach** (`Panniantong/Agent-Reach`, MIT, ~110 k étoiles) : outil local en lecture seule (recherche/lecture de X, Reddit, YouTube, GitHub, LinkedIn emplois…), ne publie rien. LinkedIn = uniquement offres d'emploi (chercher/lire). Instagram, Facebook, X = « expérimental », via les cookies du compte principal de l'utilisateur et un navigateur furtif (CloakBrowser) → risque de blocage du compte ; le README conseille un compte secondaire. Non installé ; ne le ferait que sur accord, après lecture des scripts.
+- **LinkedIn gratuit et officiel** : programmation native LinkedIn (illimitée) ou Typefully (offre gratuite ~10 posts/mois selon sa page de prix ; vérifier à l'inscription). Metricool gratuit n'inclut pas LinkedIn.
+
 ## Journal des routines
