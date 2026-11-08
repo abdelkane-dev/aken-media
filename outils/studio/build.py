@@ -48,7 +48,7 @@ def make(name, voice, text, music, scenes, avatar=None, music_db=-17, photo=Fals
         raise KeyError(word)
     if isinstance(scenes, list):  # diaporama photo : [(mot, html), ...]
         starts = [0 if i == 0 else W(k) - 0.1 for i, (k, _) in enumerate(scenes)] + [vdur + 0.15]
-        body = "".join(f'<div class="scene photo" data-start="{starts[i]:.2f}" data-end="{starts[i+1]:.2f}">{h}</div>' for i, (_, h) in enumerate(scenes))
+        body = "".join(f'<div class="scene photo" {"data-nofade=1 " if i == 0 else ""}data-start="{starts[i]:.2f}" data-end="{starts[i+1]:.2f}">{h}</div>' for i, (_, h) in enumerate(scenes))
     else:
         body = scenes(T, vdur)
     body += END.format(s=vdur + 0.15)

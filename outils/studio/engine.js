@@ -37,7 +37,7 @@ function render(t) {
   const bar = document.getElementById('bar'); if (bar) bar.style.width = (t / C.duration * 100) + '%';
   document.querySelectorAll('.scene').forEach(sc => {
     const s = parseFloat(sc.dataset.start), e = parseFloat(sc.dataset.end);
-    const fi = E.ease((t - s) / 0.3), fo = 1 - E.ease((t - e) / 0.3);
+    const fi = sc.dataset.nofade ? 1 : E.ease((t - s) / 0.3), fo = 1 - E.ease((t - e) / 0.3);
     const vis = t >= s - 0.01 && t <= e + 0.3;
     sc.style.opacity = vis ? Math.min(fi, fo) : 0;
     if (sc.classList.contains('photo')) sc.style.transform = vis ? `scale(${lin(1, 1.07, Math.min(1, (t - s) / Math.max(e - s, 1)))})` : '';

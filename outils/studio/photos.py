@@ -46,6 +46,46 @@ SPECS.update({
            ("réponses", point("3", "Réponses rapides", "Pour les questions<br>qui reviennent", "⚡")),
            ("suffit", '<div class="center h" style="top:560px;font-size:96px">QUAND ÇA<br><span class="grad">NE SUFFIT PLUS</span></div><div class="center" style="top:930px;font-size:52px">Passe à la boutique en ligne.</div>')]),
 })
+
+# ---------- Format v2 : accroche visible dès l'image 1, voix dès 0 s, 10-15 s ----------
+def hook(big, sub=""):
+    return (f'<div class="center h" style="top:470px;font-size:118px">{big}</div>'
+            + (f'<div class="center" style="top:1010px;font-size:52px;color:rgba(255,255,255,.85)">{sub}</div>' if sub else ""))
+def step(n, head, body, icon):
+    return (f'<div class="center h grad" style="top:260px;font-size:210px">{n}</div>'
+            f'<div class="center" style="top:560px;font-size:150px">{icon}</div>'
+            f'<div class="center h" style="top:790px;font-size:78px">{head}</div>'
+            f'<div class="center" style="top:1060px;font-size:46px;color:rgba(255,255,255,.85);line-height:1.3">{body}</div>')
+def cta(big, small):
+    return (f'<div class="center h" style="top:520px;font-size:104px">{big}</div>'
+            f'<div class="center" style="top:900px"><span class="pill gbg" style="font-size:40px;padding:20px 36px;white-space:nowrap;color:#0A0A0A;font-family:Montserrat;font-weight:900">{small}</span></div>')
+
+SPECS.update({
+ "v2-erreurs": dict(voice=V+"v2-erreurs.mp3", music=M+"afrohouse.wav", photo=True, music_db=-18,
+   text="Ta page Facebook ne vend pas ? Voici trois erreurs. Un : aucun prix affiché. Deux : pas de bouton WhatsApp. Trois : des photos sombres et floues. Corrige ça aujourd'hui. Et écris SITE sur WhatsApp, si tu veux qu'on t'aide.",
+   scenes=[("", hook('TA PAGE<br><span class="grad">NE VEND PAS&nbsp;?</span>', "3 erreurs à corriger")),
+           ("aucun prix", step("1", "AUCUN PRIX AFFICHÉ", "Affiche au moins<br>un prix de départ", "🏷️")),
+           ("bouton", step("2", "PAS DE BOUTON WHATSAPP", "Un clic doit suffire<br>pour t'écrire", "💬")),
+           ("photos sombres", step("3", "PHOTOS SOMBRES OU FLOUES", "Lumière du jour<br>et objectif propre", "📷")),
+           ("Corrige", hook('CORRIGE ÇA<br><span class="grad">AUJOURD\'HUI</span>')),
+           ("écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+ "v2-offre": dict(voice=V+"v2-offre.mp3", music=M+"amapiano.wav", photo=True, music_db=-18,
+   text="Personne ne comprend ce que tu vends ? Écris ton offre en une phrase. Le modèle : j'aide qui, à obtenir quoi, en combien de temps. Exemple : j'aide les restaurants à recevoir des commandes sur leur téléphone. Écris ta phrase en commentaire.",
+   scenes=[("", hook('PERSONNE NE COMPREND<br><span class="grad">CE QUE TU VENDS ?</span>')),
+           ("Écris ton offre", hook('ÉCRIS TON OFFRE<br><span class="grad">EN UNE PHRASE</span>')),
+           ("modèle", '<div class="center" style="top:300px;font-size:54px;color:rgba(255,255,255,.7)">LE MODÈLE</div><div class="card center" style="top:420px;padding:70px 50px;font-size:70px;font-weight:800;line-height:1.35;font-family:Montserrat">J\'aide <span class="grad">QUI</span><br>à obtenir <span class="grad">QUOI</span><br>en <span class="grad">COMBIEN DE TEMPS</span></div>'),
+           ("Exemple", '<div class="center" style="top:300px;font-size:54px;color:rgba(255,255,255,.7)">EXEMPLE</div><div class="card center" style="top:420px;padding:70px 50px;font-size:64px;font-weight:700;line-height:1.35">« J\'aide <span class="grad">les restaurants</span> à <span class="grad">recevoir des commandes</span> sur leur téléphone. »</div>'),
+           ("Écris ta phrase", cta('ÉCRIS TA PHRASE<br><span class="grad">EN COMMENTAIRE</span>', "👇 on la lit tous"))]),
+ "v2-photos": dict(voice=V+"v2-photos.mp3", music=M+"lofi.wav", photo=True, music_db=-17,
+   text="Tes photos produit ne donnent pas envie ? Trois astuces avec ton téléphone. Un : place-toi près d'une fenêtre, jamais de flash. Deux : fond uni, une seule chose dans l'image. Trois : essuie l'objectif avant chaque photo. Simple, gratuit, et ça change tout.",
+   scenes=[("", hook('TES PHOTOS PRODUIT<br><span class="grad">NE DONNENT PAS ENVIE ?</span>')),
+           ("Trois astuces", hook('3 ASTUCES<br><span class="grad">AVEC TON TÉLÉPHONE</span>')),
+           ("fenêtre", step("1", "PRÈS D'UNE FENÊTRE", "Lumière du jour,<br>jamais de flash", "🪟")),
+           ("fond uni", step("2", "FOND UNI", "Une seule chose<br>dans l'image", "🛍️")),
+           ("essuie", step("3", "ESSUIE L'OBJECTIF", "Avant chaque photo", "🧽")),
+           ("Simple", hook('SIMPLE. GRATUIT.<br><span class="grad">ÇA CHANGE TOUT.</span>'))]),
+})
+
 if __name__ == "__main__":
     import sys, build
     for n in sys.argv[1:]: build.make(n, **SPECS[n])
