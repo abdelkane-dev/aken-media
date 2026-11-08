@@ -119,6 +119,48 @@ SPECS.update({
            ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
 })
 
+
+# ---------- Services et projets réels (site akendev.com + README) ----------
+def proj2(kicker, title, sub):
+    return (f'<div style="position:absolute;left:80px;top:220px"><span class="pill gbg" style="color:#0A0A0A;font-size:38px;font-family:Montserrat;font-weight:900">{kicker}</span></div>'
+            f'<div class="center h" style="top:500px;font-size:92px">{title}</div>'
+            f'<div class="center" style="top:1010px;font-size:50px;color:rgba(255,255,255,.85)">{sub}</div>')
+def urlcard(label, url):
+    return (f'<div class="center h" style="top:470px;font-size:100px">{label}</div>'
+            f'<div class="card center" style="top:880px;padding:40px 20px;font-size:48px;font-weight:800;font-family:Montserrat">{url}</div>')
+
+SPECS.update({
+ "v3-db": dict(voice=V+"v3-db.mp3", music=M+"lofi.wav", photo=True, music_db=-17,
+   text="Tes stocks et tes clients sont dans des dizaines de fichiers Excel ? Voilà le problème. La solution : une base de données centrale. On migre ton historique en sécurité, puis on crée un tableau de bord des ventes et du stock. Écris SITE sur WhatsApp.",
+   scenes=[("", hook('TES STOCKS ET CLIENTS<br>DANS <span class="grad">DES DIZAINES<br>D\'EXCEL ?</span>')),
+           ("problème", '<div class="center h grad" style="top:230px;font-size:110px">LE PROBLÈME</div>' + listcard([("📂", "Fichiers éparpillés"), ("❓", "Chiffres contradictoires"), ("🙈", "Décisions à l'aveugle")], top=480)),
+           ("La solution", hook('UNE BASE DE DONNÉES<br><span class="grad">CENTRALE</span>', "Une seule source de vérité")),
+           ("On migre", step("", "MIGRATION SÉCURISÉE", "De tout ton historique", "🔒")),
+           ("tableau de bord", '<div class="center h grad" style="top:230px;font-size:100px">TABLEAU DE BORD</div>' + listcard([("📈", "Les ventes"), ("📦", "Le stock")], top=500)),
+           ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+ "v3-digitalpress": dict(voice=V+"v3-digitalpress.mp3", music=M+"afrohouse.wav", photo=True, music_db=-18,
+   text="Comment protéger un magazine numérique ? Voici DigitalPress, une plateforme de presse que j'ai créée. Une application mobile Flutter, une API Django. Et un lecteur PDF avec filigrane : l'email du lecteur s'affiche sur la page. Écris SITE sur WhatsApp pour ton projet.",
+   scenes=[("", hook('COMMENT PROTÉGER<br><span class="grad">UN MAGAZINE<br>NUMÉRIQUE ?</span>')),
+           ("Voici DigitalPress", proj2("MON PROJET", '<span class="grad">DIGITALPRESS</span>', "Plateforme de presse numérique")),
+           ("Une application mobile", '<div class="center h grad" style="top:230px;font-size:100px">LA TECHNO</div>' + listcard([("📱", "Application Flutter"), ("⚙️", "API Django")], top=500)),
+           ("lecteur PDF", step("", "LECTEUR PDF SÉCURISÉ", "L'email du lecteur<br>s'affiche en filigrane", "📄")),
+           ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+ "v3-orientaml": dict(voice=V+"v3-orientaml.mp3", music=M+"amapiano.wav", photo=True, music_db=-18,
+   text="Trouver un emploi ou une formation au Mali, c'est difficile ? Voici OrientaML, une plateforme que j'ai créée. Elle recommande des offres grâce à l'intelligence artificielle, analyse ton CV, et un assistant répond à tes questions de carrière. Elle est en ligne. Écris SITE sur WhatsApp pour ton projet.",
+   scenes=[("", hook('TROUVER UN EMPLOI<br>OU UNE FORMATION<br><span class="grad">AU MALI ?</span>')),
+           ("Voici OrientaML", proj2("MON PROJET · EN LIGNE", '<span class="grad">ORIENTAML</span>', "Orientation professionnelle par IA")),
+           ("Elle recommande", listcard([("🎯", "Offres recommandées"), ("📄", "Analyse de ton CV"), ("💬", "Assistant carrière")])),
+           ("en ligne", urlcard('<span class="grad">EN LIGNE</span>', "oriantaml.onrender.com")),
+           ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+ "v3-transport": dict(voice=V+"v3-transport.mp3", music=M+"afrohouse.wav", photo=True, music_db=-18,
+   text="Tu gères des bus et des réservations à la main ? Voici une application de réservation de billets de bus, dont j'ai conçu le backend. La flotte, les trajets, les places disponibles en temps réel, les annulations. Avec une API pour une future application mobile. Écris SITE sur WhatsApp.",
+   scenes=[("", hook('TU GÈRES TES BUS<br>ET TES RÉSERVATIONS<br><span class="grad">À LA MAIN ?</span>')),
+           ("Voici une application", proj2("MON PROJET · CODE PUBLIC", 'RÉSERVATION DE<br><span class="grad">BILLETS DE BUS</span>', "Backend Django · API REST")),
+           ("La flotte", listcard([("🚌", "La flotte"), ("🗺️", "Les trajets"), ("💺", "Places en temps réel"), ("↩️", "Les annulations")], top=330)),
+           ("Avec une API", step("", "UNE API REST", "Prête pour une future<br>application mobile", "🔌")),
+           ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+})
+
 if __name__ == "__main__":
     import sys, build
     for n in sys.argv[1:]: build.make(n, **SPECS[n])
