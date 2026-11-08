@@ -86,6 +86,39 @@ SPECS.update({
            ("Simple", hook('SIMPLE. GRATUIT.<br><span class="grad">ÇA CHANGE TOUT.</span>'))]),
 })
 
+
+# ---------- Posts « vrais projets » (faits tirés des README publics) ----------
+def listcard(items, top=360):
+    rows = "".join(f'<div class="card" style="position:absolute;left:110px;right:110px;top:{top + i*150}px;height:124px;display:flex;align-items:center;gap:34px;padding:0 44px;font-size:48px;font-weight:700" data-anim="pop" data-at="{0.15 + i*0.28:.2f}"><span style="font-size:64px">{e}</span><span>{t}</span></div>' for i, (e, t) in enumerate(items))
+    return rows
+def proj(title, sub):
+    return (f'<div style="position:absolute;left:80px;top:220px"><span class="pill gbg" style="color:#0A0A0A;font-size:40px;font-family:Montserrat;font-weight:900">PROJET · CODE PUBLIC</span></div>'
+            f'<div class="center h" style="top:520px;font-size:96px">{title}</div>'
+            f'<div class="center" style="top:1000px;font-size:50px;color:rgba(255,255,255,.85)">{sub}</div>')
+def repo(name):
+    return ('<div class="center h" style="top:470px;font-size:100px">CODE PUBLIC<br><span class="grad">SUR GITHUB</span></div>'
+            '<div class="card center" style="top:880px;padding:36px 20px"><div style="font-size:32px;color:rgba(255,255,255,.7)">github.com/abdelkane-dev/</div>'
+            f'<div style="font-size:46px;font-weight:800;margin-top:10px;font-family:Montserrat">{name}</div></div>')
+
+SPECS.update({
+ "v2-hotel": dict(voice=V+"v2-hotel.mp3", music=M+"afrohouse.wav", photo=True, music_db=-18,
+   text="Un hôtel qui gère tout sur papier ? Voici un système de gestion hôtelière que j'ai codé. Réservations, clients, chambres, personnel et facturation, au même endroit. Chaque employé a son propre accès. Le code est public sur GitHub. Écris SITE sur WhatsApp pour le même genre d'outil.",
+   scenes=[("", hook('UN HÔTEL QUI GÈRE<br><span class="grad">TOUT SUR PAPIER ?</span>')),
+           ("Voici un système", proj('SYSTÈME DE<br><span class="grad">GESTION HÔTELIÈRE</span>', "Fait avec Django")),
+           ("Réservations", listcard([("🛏️", "Réservations"), ("👥", "Clients"), ("🚪", "Chambres"), ("🧑‍💼", "Personnel"), ("🧾", "Facturation")])),
+           ("Chaque employé", step("", "UN ACCÈS PAR EMPLOYÉ", "Chacun voit<br>ce qui le concerne", "🔐")),
+           ("Le code est", repo("Hotel-management-django")),
+           ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+ "v2-patisserie": dict(voice=V+"v2-patisserie.mp3", music=M+"amapiano.wav", photo=True, music_db=-18,
+   text="Tu vends des gâteaux et tu notes les commandes sur un cahier ? Voici un outil de gestion de pâtisserie que j'ai codé. Le client commande et suit sa commande. Toi, tu gères les produits, le stock avec des alertes, et toutes les commandes. Code public sur GitHub. Écris SITE sur WhatsApp.",
+   scenes=[("", hook('TU NOTES TES COMMANDES<br><span class="grad">SUR UN CAHIER ?</span>', "🍰")),
+           ("Voici un outil", proj('OUTIL DE GESTION<br><span class="grad">DE PÂTISSERIE</span>', "Fait avec Django")),
+           ("Le client commande", step("", "CÔTÉ CLIENT", "Il commande<br>et suit sa commande", "👤")),
+           ("Toi,", '<div class="center h grad" style="top:230px;font-size:110px">CÔTÉ TOI</div>' + listcard([("🧁", "Tes produits"), ("📦", "Stock avec alertes"), ("📋", "Toutes les commandes")], top=480)),
+           ("Code public", repo("Mes_delice")),
+           ("Écris SITE", cta('ÉCRIS<br><span class="grad">« SITE »</span>', "sur WhatsApp · +223 93 78 99 16"))]),
+})
+
 if __name__ == "__main__":
     import sys, build
     for n in sys.argv[1:]: build.make(n, **SPECS[n])
