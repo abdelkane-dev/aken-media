@@ -185,3 +185,8 @@ Méthode retenue (celle de la vidéo) : comparer **son compte vs les concurrents
 ### 8 nov. (nuit) : purge des projets sensibles
 - Post du 17 nov. 18 h remplacé par une vidéo générique « 3 astuces pour protéger un magazine numérique » (Metricool id 420882600, uuid 385825624765319587), sans nom de projet. Spec `v3-contenu` dans `outils/studio/photos.py`.
 - Noms et détails des deux projets sensibles retirés du contexte et du code (historique de la branche réécrit en local ; envoi forcé en attente de l'accord de l'utilisateur).
+
+### 8 nov. (nuit) : calendrier complété (posts génériques, aucun nom de projet sensible)
+- 21 nov. 10 h sécurité (3 gestes) ; 24 nov. 18 h appli qui marche en 3G ; 27 nov. 10 h système de réservation ; 29 nov. 18 h plateforme e-learning. 5 destinations chacun. Specs `v3-securite`, `v3-offline`, `v3-reservation`, `v3-elearning` dans `outils/studio/photos.py`.
+- Jours encore vides : 23 nov., 26 nov., 28 nov., 30 nov. (volontairement, pour ne pas surcharger).
+- Crédits ElevenLabs (estimation) : ≈ 2 650 restants (réserve minimale 2 000) → pas de nouvelle voix payante pour l'instant.
