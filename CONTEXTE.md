@@ -190,3 +190,9 @@ Méthode retenue (celle de la vidéo) : comparer **son compte vs les concurrents
 - 21 nov. 10 h sécurité (3 gestes) ; 24 nov. 18 h appli qui marche en 3G ; 27 nov. 10 h système de réservation ; 29 nov. 18 h plateforme e-learning. 5 destinations chacun. Specs `v3-securite`, `v3-offline`, `v3-reservation`, `v3-elearning` dans `outils/studio/photos.py`.
 - Jours encore vides : 23 nov., 26 nov., 28 nov., 30 nov. (volontairement, pour ne pas surcharger).
 - Crédits ElevenLabs (estimation) : ≈ 2 650 restants (réserve minimale 2 000) → pas de nouvelle voix payante pour l'instant.
+
+### Routine du 9 nov. (soir)
+- Metricool : posts du 8 nov. (18 h) et du 9 nov. (10 h) publiés sur les 5 destinations, sans échec. Prévus : 10, 11, 12, 13 nov., puis 14-29 nov. (le calendrier couvre déjà plus de 3 jours).
+- Commentaires YouTube : aucun commentaire sans réponse du propriétaire (3 fils récents, tous déjà traités). Aucune réponse publiée.
+- Stats détaillées et recherche de concurrents non lancées aujourd'hui (rien de nouveau à publier ; crédits vidIQ économisés). Aucun nouveau post créé, crédits ElevenLabs inchangés (≈ 2 650).
+- Une notification de la routine du 8 nov. était arrivée en retard (la routine ne tourne que si la session est éveillée).
