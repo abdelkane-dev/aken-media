@@ -196,3 +196,9 @@ Méthode retenue (celle de la vidéo) : comparer **son compte vs les concurrents
 - Commentaires YouTube : aucun commentaire sans réponse du propriétaire (3 fils récents, tous déjà traités). Aucune réponse publiée.
 - Stats détaillées et recherche de concurrents non lancées aujourd'hui (rien de nouveau à publier ; crédits vidIQ économisés). Aucun nouveau post créé, crédits ElevenLabs inchangés (≈ 2 650).
 - Une notification de la routine du 8 nov. était arrivée en retard (la routine ne tourne que si la session est éveillée).
+
+### Routine du 14 nov. (soir, rattrapage des 10 à 14 nov.)
+- Les notifications des 10, 11, 12, 13 et 14 nov. sont arrivées groupées (la session était endormie) ; une seule routine a été faite pour la période.
+- Metricool : tous les posts du 10 au 14 nov. publiés sur les 5 destinations, aucun échec. Prévus ensuite : 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 27, 29 nov. (calendrier couvert au-delà de 3 jours).
+- Commentaires YouTube : aucun nouveau commentaire, rien sans réponse. Aucune réponse publiée.
+- Statistiques détaillées et concurrents non lancés (crédits vidIQ économisés). Aucun nouveau post, crédits ElevenLabs inchangés (≈ 2 650).
