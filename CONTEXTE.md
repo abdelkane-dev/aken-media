@@ -202,3 +202,8 @@ Méthode retenue (celle de la vidéo) : comparer **son compte vs les concurrents
 - Metricool : tous les posts du 10 au 14 nov. publiés sur les 5 destinations, aucun échec. Prévus ensuite : 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 27, 29 nov. (calendrier couvert au-delà de 3 jours).
 - Commentaires YouTube : aucun nouveau commentaire, rien sans réponse. Aucune réponse publiée.
 - Statistiques détaillées et concurrents non lancés (crédits vidIQ économisés). Aucun nouveau post, crédits ElevenLabs inchangés (≈ 2 650).
+
+### Routine du 15 nov. (soir)
+- Metricool : post du 15 nov. 18 h (Wave / boutique) publié sur les 5 destinations. Prévus : 16, 17, 18, 19, 20, 21, 22, 24, 25, 27, 29 nov.
+- YouTube : aucun commentaire sans réponse. À signaler à l'utilisateur : le commentaire épinglé de la nouvelle vidéo DevLink (publié le 15 nov. par la chaîne) contient encore le texte « [LIEN DE DÉMONSTRATION] » à remplacer. Rien publié par la routine. DevLink est un projet privé : pas de post Aken dessus sans accord.
+- Pas de nouveau post, crédits ElevenLabs inchangés (≈ 2 650).
