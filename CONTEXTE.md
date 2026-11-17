@@ -212,3 +212,8 @@ Méthode retenue (celle de la vidéo) : comparer **son compte vs les concurrents
 - Metricool : post du 16 nov. 10 h (base de données centrale) publié sur les 5 destinations. Prévus : 17, 18, 19, 20, 21, 22, 24, 25, 27, 29 nov.
 - YouTube : aucun commentaire de visiteur sans réponse. Le commentaire épinglé de la vidéo DevLink contient toujours « [LIEN DE DÉMONSTRATION] » (déjà signalé à l'utilisateur).
 - Pas de nouveau post, crédits ElevenLabs inchangés (≈ 2 650).
+
+### Routine du 17 nov. (soir)
+- Metricool : post du 17 nov. 18 h (« protéger un contenu numérique », générique) publié sur les 5 destinations. Prévus : 18, 19, 20, 21, 22, 24, 25, 27, 29 nov.
+- YouTube : aucun commentaire de visiteur sans réponse ; le commentaire épinglé DevLink contient encore « [LIEN DE DÉMONSTRATION] » (déjà signalé).
+- Pas de nouveau post, crédits ElevenLabs inchangés (≈ 2 650).
